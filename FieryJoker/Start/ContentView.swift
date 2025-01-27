@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Image("Splash screen")
+            Image("lo2")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
