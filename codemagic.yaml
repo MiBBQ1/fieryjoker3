@@ -18,7 +18,7 @@ workflows:
         BUNDLE_ID: "com.LoaidShihadi.FieryJoker"
         XCODE_WORKSPACE: "FieryJoker.xcodeproj"
         XCODE_SCHEME: "FieryJoker"
-        APP_STORE_APPLE_ID: 6740920553
+        APP_STORE_APPLE_ID: 6740829543
 
       xcode: latest
 
