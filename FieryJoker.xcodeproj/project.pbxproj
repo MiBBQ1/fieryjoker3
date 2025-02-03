@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532D3B362D50D501008988AC /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 532D3B352D50D501008988AC /* Swifter */; };
 		A51D61402D4151F500616D86 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D613F2D4151F500616D86 /* ShopView.swift */; };
 		A59CB42C2D403C94000465F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59CB42B2D403C94000465F4 /* Assets.xcassets */; };
 		A59CB42F2D403C94000465F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59CB42E2D403C94000465F4 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532D3B372D50E5C5008988AC /* FieryJoker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FieryJoker.entitlements; sourceTree = "<group>"; };
 		A51D613F2D4151F500616D86 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		A59CB4242D403C93000465F4 /* FieryJoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieryJoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59CB42B2D403C94000465F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				A5F68F842D46F4E9000B4150 /* OneSignalInAppMessages in Frameworks */,
 				A5F68F892D46F4FE000B4150 /* AppsFlyerLib in Frameworks */,
 				A5F68F822D46F4E9000B4150 /* OneSignalFramework in Frameworks */,
+				532D3B362D50D501008988AC /* Swifter in Frameworks */,
 				A5F68F862D46F4E9000B4150 /* OneSignalLocation in Frameworks */,
 				A5F68F802D46F4E9000B4150 /* OneSignalExtension in Frameworks */,
 			);
@@ -76,6 +79,7 @@
 		A59CB4262D403C93000465F4 /* FieryJoker */ = {
 			isa = PBXGroup;
 			children = (
+				532D3B372D50E5C5008988AC /* FieryJoker.entitlements */,
 				A5E9751B2D40D74B005E3CD1 /* Info.plist */,
 				A51D61422D41842400616D86 /* fonts */,
 				A51D61412D41841E00616D86 /* Views */,
@@ -158,6 +162,7 @@
 			packageReferences = (
 				A5F68F7E2D46F4E9000B4150 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
 				A5F68F872D46F4FE000B4150 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				532D3B342D50D501008988AC /* XCRemoteSwiftPackageReference "swifter" */,
 			);
 			productRefGroup = A59CB4252D403C93000465F4 /* Products */;
 			projectDirPath = "";
@@ -319,13 +324,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FieryJoker/FieryJoker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FieryJoker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FieryJoker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fiery Joker";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is utilized exclusively for the app's functionality, and no information is collected from it.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio notes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We request permission to access your photo library to allow saving and loading images.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use a tracking identifier to enhance app convenience and personalization. Collected data will not be linked to your identity.\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,8 +347,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.FieryJoker;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoaidShihadi.FieryJoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -356,13 +365,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FieryJoker/FieryJoker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FieryJoker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FieryJoker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fiery Joker";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is utilized exclusively for the app's functionality, and no information is collected from it.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio notes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We request permission to access your photo library to allow saving and loading images.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use a tracking identifier to enhance app convenience and personalization. Collected data will not be linked to your identity.\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -375,8 +388,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.FieryJoker;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoaidShihadi.FieryJoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -412,6 +425,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		532D3B342D50D501008988AC /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		A5F68F7E2D46F4E9000B4150 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
@@ -431,6 +452,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		532D3B352D50D501008988AC /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 532D3B342D50D501008988AC /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
 		A5F68F7F2D46F4E9000B4150 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A5F68F7E2D46F4E9000B4150 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;

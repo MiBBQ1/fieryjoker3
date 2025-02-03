@@ -1,5 +1,5 @@
 {
-  "originHash" : "82d90de69a39cea9ac9f366481a148cdac58abca07e1da1e2a265209297a902b",
+  "originHash" : "edfacfb0b6a3436e4dd35e1c44d7d5b72ce09c6ca83ec87001c4b0330305dc59",
   "pins" : [
     {
       "identity" : "appsflyerframework",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "02ede33062016cd948ba1e4f157e2f5617e12c8e",
         "version" : "5.2.9"
+      }
+    },
+    {
+      "identity" : "swifter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/httpswift/swifter",
+      "state" : {
+        "revision" : "9483a5d459b45c3ffd059f7b55f9638e268632fd",
+        "version" : "1.5.0"
       }
     }
   ],
