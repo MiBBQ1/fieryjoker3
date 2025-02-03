@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Название приложения
-APP_NAME="FieryJoker"
+APP_NAME="FieryJoker3"
 REPO_NAME=$(echo $APP_NAME | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
 
 # Ваш GitHub-аккаунт
