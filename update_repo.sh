@@ -34,7 +34,7 @@ if [[ -n $(git status --porcelain) ]]; then
 
     # Вывести ссылку для создания Pull Request
     GITHUB_USERNAME="MiBBQ1"
-    REPO_NAME="walk-in-palme-roma"
+    REPO_NAME="FieryJoker"
     echo "🔗 Создайте Pull Request: https://github.com/$GITHUB_USERNAME/$REPO_NAME/pull/new/$BRANCH_NAME"
 else
     echo "⚡ Нет изменений для коммита"
