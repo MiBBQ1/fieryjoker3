@@ -8,7 +8,7 @@ workflows:
 
     environment:
       groups:
-        - Walk  # <-- Используем Variable Group с API-ключами
+        - FieryJokerGr  # <-- Используем Variable Group с API-ключами
 
       ios_signing:
         distribution_type: app_store
