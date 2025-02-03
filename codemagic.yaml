@@ -35,8 +35,8 @@ workflows:
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
-            --project "Walk in Palme Roma.xcodeproj" \
-            --scheme "Walk in Palme Roma"
+            --project "FieryJoker.xcodeproj" \
+            --scheme "FieryJoker"
 
       - name: Проверяем переменные среды перед публикацией
         script: |
